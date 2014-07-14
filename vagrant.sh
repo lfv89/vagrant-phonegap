@@ -53,4 +53,6 @@ then
   source /home/vagrant/.bashrc
 
   sudo chmod 777 -R /home/vagrant/android/
+
+  echo 'y' | android update sdk --no-ui -t 3
 fi
