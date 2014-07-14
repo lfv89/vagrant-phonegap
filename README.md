@@ -1,6 +1,16 @@
 # phonegap-box #
 
-This is a vagrant box provisioned with the phonegap development environment. Since is a ubuntu box, android is the only available platform.
+This is a vagrant box provisioned with the phonegap development environment. Also, this is a ubuntu box, so **android** is the available platform.
+
+This box will install and configure the following:
+
+* Vim
+* Git
+* Node.js
+* Npm
+* Java JRE
+* Java SDK
+* Android SDK
 
 ## Install the box ##
 
@@ -33,6 +43,6 @@ The box doesn't have an UI, so there is no emulator, you can only install on the
 1. run `cd /vagrant`
 2. run `phonegap create folder-name -n ProjectName`
 3. run `cd folder-name`
-$. run `phonegap run android`
+4. run `phonegap run android`
 
 Done.
