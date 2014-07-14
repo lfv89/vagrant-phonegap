@@ -10,7 +10,7 @@ This box will install and configure the following:
 * Npm
 * Java JRE
 * Java SDK
-* Android SDK
+* Android ADT
 
 ## Install the box ##
 
