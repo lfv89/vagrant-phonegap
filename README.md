@@ -37,9 +37,9 @@ In order to resolve the `?????? no permissions` problem:
 3. (vagrant) run `cd folder-name`
 4. (vagrant) run `phonegap run android`
 
-**That's it**
+**That's it.**
 
-## More information ##
+## About this box ##
 
 This box will install and configure the following:
 
