@@ -28,11 +28,10 @@ The box doesn't have an UI, so there is no emulator, you can only install on the
 
 0. Plug the device
 1. VirtualBox -> phonegap-box -> Settings -> Ports -> USB -> Add Filter -> (Select your android device)
-2. (On your device) Settings -> Developer Options -> USB Debugging
-3. (On your device) A prompt to allow the virtual machine will appear. Click ok.
-4. Plug and unplug the usb device.
-
-5. On the vagrant terminal, run `adb devices`. You now should see your device on the list. 
+2. (your device) Settings -> Developer Options -> USB Debugging (remark if it alreday marked)
+3. (your device) A prompt to allow the virtual machine will appear. Click ok.
+4. Plug and unplug the USB device.
+5. (vagrant) run `adb devices`. You now should see your device on the list. 
 
 In order to resolve the `?????? no permissions` problem:
 
@@ -43,9 +42,9 @@ In order to resolve the `?????? no permissions` problem:
 
 ## Create and run your phonegap project ##
 
-1. run `cd /vagrant`
-2. run `phonegap create folder-name -n ProjectName`
-3. run `cd folder-name`
-4. run `phonegap run android`
+1. (vagrant) run `cd /vagrant`
+2. (vagrant) run `phonegap create folder-name -n ProjectName`
+3. (vagrant) run `cd folder-name`
+4. (vagrant) run `phonegap run android`
 
 Done.
