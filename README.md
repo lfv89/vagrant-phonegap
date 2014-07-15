@@ -4,7 +4,7 @@ A **vagrant** box provisioned with the phonegap development environment for the 
 
 **All you have to do** is to clone the repository, fire `vagrant up` and add your android device to VirtualBox. After that you are ready to begin your phonegap project.
 
-## Installation the box ##
+## Installation ##
 
 ### 1) Download and install the box ###
 
@@ -41,7 +41,7 @@ In order to resolve the `?????? no permissions` problem:
 
 **That's it.**
 
-## About this box ##
+## About ##
 
 This box will install and configure the following:
 
