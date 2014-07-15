@@ -2,7 +2,7 @@
 
 A **vagrant** box provisioned with the phonegap development environment for the **android** platform.
 
-All you have to do is to clone the repository, fire `vagrant up` and add your android device to VirtualBox. After that you are ready to begin your phonegap project.
+**All you have to do** is to clone the repository, fire `vagrant up` and add your android device to VirtualBox. After that you are ready to begin your phonegap project.
 
 This box will install and configure the following:
 
