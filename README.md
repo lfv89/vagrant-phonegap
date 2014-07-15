@@ -30,9 +30,11 @@ The box doesn't have an UI, so there is no emulator, you can only install on the
 1. VirtualBox -> phonegap-box -> Settings -> Ports -> USB -> Add Filter -> (Select your android device)
 2. (On your device) Settings -> Developer Options -> USB Debugging
 3. (On your device) A prompt to allow the virtual machine will appear. Click ok.
-4. Plug and unplug the device.
+4. Plug and unplug the usb device.
 
-5. On the vagrant terminal, type `adb devices`. You now should see your device on the list. In order to resolve the `?????? no permissions` problem:
+5. On the vagrant terminal, run `adb devices`. You now should see your device on the list. 
+
+In order to resolve the `?????? no permissions` problem:
 
 * sudo -s
 * adb kill-server
