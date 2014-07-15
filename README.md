@@ -12,7 +12,6 @@ A **vagrant** box provisioned with the phonegap development environment for the 
 2. run `git clone git@github.com:vasconcelloslf/phonegap-box.git`
 3. run `cd phonegap-box`
 3. run `vagrant up`
-4. run `vagrant ssh`
 
 ### 2) Configure your device on the box ###
 
@@ -34,10 +33,11 @@ In order to resolve the `?????? no permissions` problem:
 
 ### 3) Create and run your phonegap project ###
 
-3. (vagrant) run `cd /vagrant`
-2. (vagrant) run `phonegap create folder-name -n ProjectName`
-3. (vagrant) run `cd folder-name`
-4. (vagrant) run `phonegap run android`
+1. run `vagrant ssh`
+2. run `cd /vagrant`
+3. run `phonegap create folder-name -n ProjectName`
+4. run `cd folder-name`
+5. run `phonegap run android`
 
 **That's it.**
 
