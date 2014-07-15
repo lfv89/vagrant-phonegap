@@ -21,7 +21,6 @@ This box will install and configure the following:
 3. run `cd phonegap-box`
 3. run `vagrant up`
 4. run `vagrant ssh`
-5. run `android update sdk --no-ui -t 3`
 
 ## Configure your device ##
 

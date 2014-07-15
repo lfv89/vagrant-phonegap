@@ -13,8 +13,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "hashicorp/precise32"
 
+  # Define the box name
+  config.vm.define "phonegap-box" do |t|
+  end
+
   # Defines shell as the box provision
   config.vm.provision :shell, path: 'vagrant.sh'
+  config.vm.provision :shell, path: 'android_update.sh', privileged: false
 
   # Hack to fix the "stdin: is not a tty" bug
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
@@ -26,6 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.network "forwarded_port", guest: 8000, host: 8001
+
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
