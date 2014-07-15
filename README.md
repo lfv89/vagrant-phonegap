@@ -14,7 +14,7 @@ A **vagrant** box provisioned with the phonegap development environment for the 
 3. run `vagrant up`
 4. run `vagrant ssh`
 
-### 2) Add your device to the box ###
+### 2) Configure your device on the box ###
 
 The box doesn't have an UI, so there is no emulator, you can only install on the device. In order to do so, you need to configure the VirtualBox to see your device through a USB port:
 
