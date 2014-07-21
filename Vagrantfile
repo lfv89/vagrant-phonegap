@@ -16,6 +16,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Define the box name
   config.vm.define "phonegap-box" do |t|
   end
+  
+  # SSH
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11 = true
 
   # Defines shell as the box provision
   config.vm.provision :shell, path: 'vagrant.sh'
