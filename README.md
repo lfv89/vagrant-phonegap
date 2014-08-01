@@ -11,6 +11,16 @@ A **vagrant** box provisioned with the phonegap development environment for the 
 3. run `cd phonegap-box`
 3. run `vagrant up`
 
+#### Note for Windows hosts:
+
+If you're using Windows as a host, then you will have problems trying to use the shared folder to host projects in. VirtualBox, NTFS, and symlinks don't work well together. To get around this issue:
+
+1. Open the `Vagrantfile` and uncomment the line under the comment "Enable symlinks in Windows."
+2. Open `secpol.msc` and navigate to `Security Settings > Local Policies > User Rights Assignment`
+3. Open the `Create Symbolic Links` and add your user account. 
+
+Membership in the Administrators group is not sufficient -- your user account must be listed. If you are just a member in the Administrators group, then it will work only if you `Run as administrator` when starting the command prompt (be it `git bash`, `cmd.exe`, etc).
+
 ### 2) Configure your device on the box ###
 
 The box doesn't have an UI, so there is no emulator, you can only install on the device. In order to do so, you need to configure the VirtualBox to see your device through a USB port:
