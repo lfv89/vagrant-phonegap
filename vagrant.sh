@@ -16,7 +16,7 @@ apt-get -y install default-jre
 apt-get -y install default-jdk
 apt-get -y install ant
 
-sudo npm install -g phonegap@3.5
+npm install -g phonegap@3.5
 
 if [ ! -e /vagrant/adt-bundle-linux-x86-20140702.zip ]
 then
