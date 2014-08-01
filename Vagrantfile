@@ -32,10 +32,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb|
     vb.name = "phonegap-box"
     vb.customize ['modifyvm', :id, '--usb', 'on']
+	# Enable symlinks for Windows. Uncomment if you're on Windows. 
+	# NOTE: you must run the command prompt as administrator or it won't work
+   #vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
   config.vm.network "forwarded_port", guest: 8000, host: 8001
-  config.vm.network "forwarded_port", guest: 3000, host: 3030
+  config.vm.network "forwarded_port", guest: 3000, host: 3030 
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
