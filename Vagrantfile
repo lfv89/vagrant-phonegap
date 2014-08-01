@@ -33,7 +33,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.name = "phonegap-box"
     vb.customize ['modifyvm', :id, '--usb', 'on']
 	# Enable symlinks for Windows. Uncomment if you're on Windows. 
-	# vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
+	# NOTE: you must run the command prompt as administrator or it won't work
+   #vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
   config.vm.network "forwarded_port", guest: 8000, host: 8001
