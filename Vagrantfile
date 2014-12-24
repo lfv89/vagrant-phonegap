@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, path: 'android_update.sh', privileged: false
 
   # Hack to fix the "stdin: is not a tty" bug
-  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash --rcfile ~/.bashrc'"
 
   # Allow USB on the box
   config.vm.provider :virtualbox do |vb|
