@@ -62,4 +62,10 @@ This box will install and configure the following:
 * Npm
 * Java JRE
 * Java SDK
-* Android ADT
+* Android ADT*
+ 
+## Author
+
+[@lfv89](http://twitter.com/lfv89)
+
+[http://luisvasconcellos.com](http://luisvasconcellos.com)
