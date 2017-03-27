@@ -64,9 +64,7 @@ This box will install and configure the following:
 * Java SDK
 * Android ADT*
  
-## Author
-
-[twitter.com/lfv89](http://twitter.com/lfv89)
+## Me
 
 [luisvasconcellos.com](http://www.luisvasconcellos.com)
 
