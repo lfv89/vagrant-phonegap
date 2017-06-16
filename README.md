@@ -1,6 +1,6 @@
 # phonegap-box #
 
-A **vagrant** box provisioned with the phonegap development environment for the **android** platform. **All you have to do** is to clone the repository, fire `vagrant up` and add your android device to VirtualBox. After that you are ready to begin your phonegap project.
+A **vagrant** box provisioned with the PhoneGap development environment for the **android** platform. **All you have to do** is to clone the repository, fire `vagrant up` and add your Android device to VirtualBox. After that, you are ready to begin your PhoneGap project.
 
 ## Installation ##
 
@@ -26,11 +26,11 @@ You must use the elevated command prompt to work with the machine. Running `vagr
 
 ### 2) Configure your device on the box ###
 
-The box doesn't have an UI, so there is no emulator, you can only install on the device. In order to do so, you need to configure the VirtualBox to see your device through a USB port:
+The box doesn't have a UI, so there is no emulator, you can only install on the device. In order to do so, you need to configure the VirtualBox to see your device through a USB port:
 
 0. Plug the device
-1. VirtualBox -> phonegap-box -> Settings -> Ports -> USB -> Add Filter -> (Select your android device)
-2. (your device) Settings -> Developer Options -> USB Debugging (remark if it alreday marked)
+1. VirtualBox -> PhoneGap-box -> Settings -> Ports -> USB -> Add Filter -> (Select your android device)
+2. (your device) Settings -> Developer Options -> USB Debugging (remark if it already marked)
 3. (your device) A prompt to allow the virtual machine will appear. Click ok.
 4. Plug and unplug the USB device.
 5. (vagrant) run `adb devices`. You now should see your device on the list. 
